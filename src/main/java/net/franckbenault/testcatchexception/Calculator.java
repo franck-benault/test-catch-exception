@@ -11,4 +11,14 @@ public class Calculator {
 			return Math.sqrt(x);
 		}
 	}
+	
+	public double divide(int x, int y) throws IllegalArgumentException {
+		
+		if(y==0) {
+			throw new IllegalArgumentException("Could not divide by 0");
+			
+		} else {
+			return x/y;
+		}
+	}
 }
